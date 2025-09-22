@@ -1,0 +1,58 @@
+{
+  "name": "@jtfox/eslint-config",
+  "version": "0.1.0",
+  "description": "Shareable ESLint configurations for JTFOX projects (TypeScript, React, Node, and tests).",
+  "license": "MIT",
+  "main": "src/base.js",
+  "exports": {
+    ".": "./src/base.js",
+    "./base": "./src/base.js",
+    "./react": "./src/react.js",
+    "./node": "./src/node.js",
+    "./test": "./src/test.js"
+  },
+  "keywords": [
+    "eslint",
+    "config",
+    "jtfox"
+  ],
+  "files": [
+    "src"
+  ],
+  "peerDependencies": {
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "eslint": "^9.12.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jest": "^27.9.0",
+    "eslint-plugin-jest-dom": "^5.2.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-n": "^17.10.2",
+    "eslint-plugin-promise": "^7.1.0",
+    "eslint-plugin-react": "^7.34.3",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-testing-library": "^6.3.0",
+    "eslint-plugin-unused-imports": "^4.0.0",
+    "typescript": ">=4.9.0"
+  },
+  "peerDependenciesMeta": {
+    "eslint-plugin-jest": {
+      "optional": true
+    },
+    "eslint-plugin-jest-dom": {
+      "optional": true
+    },
+    "eslint-plugin-jsx-a11y": {
+      "optional": true
+    },
+    "eslint-plugin-react": {
+      "optional": true
+    },
+    "eslint-plugin-react-hooks": {
+      "optional": true
+    },
+    "eslint-plugin-testing-library": {
+      "optional": true
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@jtfox/markdownlint-config",
+  "version": "0.1.0",
+  "description": "Reusable markdownlint configuration tuned for documentation and changelogs.",
+  "license": "MIT",
+  "main": "index.cjs",
+  "exports": {
+    ".": "./index.cjs"
+  },
+  "keywords": [
+    "markdownlint",
+    "config",
+    "jtfox"
+  ],
+  "files": [
+    "index.cjs"
+  ],
+  "peerDependencies": {
+    "markdownlint": "^0.34.0",
+    "markdownlint-cli2": "^0.12.1"
+  }
+}

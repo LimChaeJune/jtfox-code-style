@@ -1,0 +1,16 @@
+{
+  "name": "jtfox-code-style",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Shareable linting and formatting configurations for JTFOX projects.",
+  "license": "MIT",
+  "scripts": {
+    "lint": "turbo run lint",
+    "build": "turbo run build",
+    "test": "turbo run test"
+  },
+  "packageManager": "pnpm@9.12.3",
+  "devDependencies": {
+    "turbo": "^2.1.3"
+  }
+}

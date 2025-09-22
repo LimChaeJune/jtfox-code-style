@@ -1,0 +1,21 @@
+{
+  "name": "@jtfox/prettier-config",
+  "version": "0.1.0",
+  "description": "Opinionated Prettier configuration used across JTFOX projects.",
+  "license": "MIT",
+  "main": "index.cjs",
+  "exports": {
+    ".": "./index.cjs"
+  },
+  "keywords": [
+    "prettier",
+    "config",
+    "jtfox"
+  ],
+  "files": [
+    "index.cjs"
+  ],
+  "peerDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
