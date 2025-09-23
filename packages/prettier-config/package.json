@@ -1,24 +1,20 @@
 {
-  "name": "@jtfox/prettier-config",
-  "version": "0.1.0",
-  "description": "Opinionated Prettier configuration used across JTFOX projects.",
-  "license": "MIT",
-  "main": "index.cjs",
-  "exports": {
-    ".": "./index.cjs"
-  },
-  "keywords": [
-    "prettier",
-    "config",
-    "jtfox"
-  ],
-  "files": [
-    "index.cjs"
-  ],
-  "devDependencies": {
-    "prettier": "^3.6.2"
-  },
-  "peerDependencies": {
-    "prettier": ">=3"
-  }
+    "name": "@jtfox/prettier-config",
+    "version": "0.1.0",
+    "description": "prettier config for jtfox",
+    "keywords": [
+        "jtfox",
+        "prettier",
+        "prettier-config"
+    ],   
+    "license": "MIT",
+    "author": "@jtfox/limchaejune",
+    "type": "commonjs",
+    "main": "index.json",
+    "devDependencies": {
+        "prettier": "^3.5.3"
+    },
+    "peerDependencies": {
+        "prettier": "^2.8.8 || ^3.0.0"
+    }
 }
