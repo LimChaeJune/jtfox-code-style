@@ -15,7 +15,10 @@
   "files": [
     "index.cjs"
   ],
+  "devDependencies": {
+    "prettier": "^3.6.2"
+  },
   "peerDependencies": {
-    "prettier": "^3.3.3"
+    "prettier": ">=3"
   }
 }

@@ -1,58 +1,42 @@
 {
   "name": "@jtfox/eslint-config",
   "version": "0.1.0",
-  "description": "Shareable ESLint configurations for JTFOX projects (TypeScript, React, Node, and tests).",
+  "description": "eslint for jtfox projects",
   "license": "MIT",
-  "main": "src/base.js",
-  "exports": {
-    ".": "./src/base.js",
-    "./base": "./src/base.js",
-    "./react": "./src/react.js",
-    "./node": "./src/node.js",
-    "./test": "./src/test.js"
-  },
+  "type": "module",
+  "author": "@jtfox/LimChaeJune",
   "keywords": [
     "eslint",
     "config",
     "jtfox"
   ],
   "files": [
-    "src"
+    "dist"
   ],
-  "peerDependencies": {
-    "@typescript-eslint/eslint-plugin": "^8.8.0",
-    "@typescript-eslint/parser": "^8.8.0",
-    "eslint": "^9.12.0",
-    "eslint-plugin-import": "^2.29.1",
-    "eslint-plugin-jest": "^27.9.0",
-    "eslint-plugin-jest-dom": "^5.2.0",
-    "eslint-plugin-jsx-a11y": "^6.8.0",
-    "eslint-plugin-n": "^17.10.2",
-    "eslint-plugin-promise": "^7.1.0",
-    "eslint-plugin-react": "^7.34.3",
-    "eslint-plugin-react-hooks": "^5.0.0",
-    "eslint-plugin-testing-library": "^6.3.0",
-    "eslint-plugin-unused-imports": "^4.0.0",
-    "typescript": ">=4.9.0"
+  "dependencies": {
+    "@eslint/eslintrc": "^3.2.0",
+    "@eslint/js": "^9.15.0",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-import": ">=2.31.0",
+    "eslint-plugin-jsx-a11y": "^6.10.2",
+    "eslint-plugin-n": "^17.19.0",
+    "eslint-plugin-package-json": ">=0.33.2",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.2.0",
+    "eslint-plugin-sonarjs": "^3.0.1",
+    "eslint-plugin-unicorn": "^56.0.1",
+    "eslint-plugin-unused-imports": "^4.1.4",
+    "eslint-plugin-yml": "^1.16.0",
+    "globals": "^16.2.0",
+    "neostandard": "^0.11.9",
+    "typescript-eslint": "^8.34.0"
   },
-  "peerDependenciesMeta": {
-    "eslint-plugin-jest": {
-      "optional": true
-    },
-    "eslint-plugin-jest-dom": {
-      "optional": true
-    },
-    "eslint-plugin-jsx-a11y": {
-      "optional": true
-    },
-    "eslint-plugin-react": {
-      "optional": true
-    },
-    "eslint-plugin-react-hooks": {
-      "optional": true
-    },
-    "eslint-plugin-testing-library": {
-      "optional": true
-    }
+  "devDependencies": {
+    "builtin-modules": "^4.0.0",
+    "eslint": "^9.17.0",
+    "vitest": "^2.1.5"
+  },
+  "peerDependencies": {
+    "eslint": ">=9"
   }
 }

@@ -15,16 +15,10 @@
   "files": [
     "index.cjs"
   ],
-  "peerDependencies": {
-    "stylelint": "^16.9.0",
-    "stylelint-config-prettier": "^9.0.5",
-    "stylelint-config-standard": "^36.0.1",
-    "stylelint-config-standard-scss": "^14.1.0",
-    "stylelint-order": "^6.0.4"
+  "devDependencies": {
+    "stylelint": "^16.24.0"
   },
-  "peerDependenciesMeta": {
-    "stylelint-config-standard-scss": {
-      "optional": true
-    }
+  "peerDependencies": {
+    "stylelint": ">=16"
   }
 }
