@@ -4,7 +4,7 @@
   "description": "eslint for jtfox projects",
   "license": "MIT",
   "type": "module",
-  "author": "@jtfox/LimChaeJune",
+  "author": "@jtfox/limchaejune",
   "keywords": [
     "eslint",
     "config",

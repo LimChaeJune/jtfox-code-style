@@ -1,8 +1,10 @@
+import react from "./react";
 import strict from "./strict";
 
 export default {
   configs: {
-    strict,
     packageJson,
+    strict,
+    react,
   },
 };
