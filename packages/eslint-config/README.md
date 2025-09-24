@@ -1,6 +1,6 @@
-# @jtfox/eslint-config
+# @cj.lim/eslint-config
 
-jtfox eslint config package
+cjlim eslint config package
 
 ## 설치 방법
 
@@ -23,43 +23,43 @@ Flat Config (ESLint 9+) 기준 예시입니다.
 
 ```js
 // eslint.config.js
-import jtfox from '@jtfox/eslint-config';
+import cjlim from '@cjlim/eslint-config';
 
 export default [
     // 타입스크립트 기본 규칙
-    ...jtfox.configs.typescript,
+    ...cjlim.configs.typescript,
     // React 규칙 (import / hooks / a11y 포함)
-    ...jtfox.configs.react,
+    ...cjlim.configs.react,
 ];
 ```
 
 ### 더 엄격하게 (strict + packageJson 포함)
 
 ```js
-import jtfox from '@jtfox/eslint-config';
+import cjlim from '@cjlim/eslint-config';
 
 export default [
-    ...jtfox.configs.typescript,
-    ...jtfox.configs.react,
-    ...jtfox.configs.strict, // unicorn / sonarjs 등 강화 규칙
-    ...jtfox.configs.packageJson, // package.json 전용 규칙
+    ...cjlim.configs.packageJson, // package.json 전용 규칙
+    ...cjlim.configs.typescript,
+    ...cjlim.configs.react,
+    ...cjlim.configs.strict, // unicorn / sonarjs 등 강화 규칙
 ];
 ```
 
 ### 부분 선택(React 없이 TS만)
 
 ```js
-import jtfox from '@jtfox/eslint-config';
-export default [...jtfox.configs.typescript];
+import cjlim from '@cjlim/eslint-config';
+export default [...cjlim.configs.typescript];
 ```
 
 ### 특정 규칙만 커스터마이징
 
 ```js
-import jtfox from '@jtfox/eslint-config';
+import cjlim from '@cjlim/eslint-config';
 
 export default [
-    ...jtfox.configs.react,
+    ...cjlim.configs.react,
     {
         rules: {
             'jsx-a11y/heading-has-content': 'error',
@@ -67,19 +67,3 @@ export default [
     },
 ];
 ```
-
-## Peer Dependencies
-
-이 패키지는 `eslint >= 9`만 peer 로 강제합니다. React/TypeScript 프로젝트에서는 별도로 다음을 설치해야 할 수 있습니다:
-
-```bash
-pnpm add -D typescript typescript-eslint eslint-plugin-react eslint-plugin-react-hooks eslint-plugin-jsx-a11y eslint-plugin-import eslint-plugin-unused-imports
-```
-
-strict / packageJson 를 쓸 경우:
-
-```bash
-pnpm add -D eslint-plugin-unicorn eslint-plugin-sonarjs eslint-plugin-package-json
-```
-
-필요한 플러그인만 선택 설치 가능합니다.

@@ -1,22 +1,29 @@
 {
     "name": "@cj.lim/eslint-config",
-    "author": "@cj.lim/limchaejune",
-    "version": "0.1.1",
+    "version": "0.1.3",
     "description": "eslint for cj.lim projects",
-    "license": "MIT",
-    "type": "module",
-    "sideEffects": false,
+    "keywords": [
+        "eslint",
+        "config",
+        "cj.lim"
+    ],
     "homepage": "https://github.com/LimChaeJune/jtfox-code-style",
     "repository": {
         "type": "git",
         "url": "https://github.com/LimChaeJune/jtfox-code-style.git",
         "directory": "packages/eslint-config"
     },
-    "keywords": [
-        "eslint",
-        "config",
-        "cj.lim"
-    ],
+    "license": "MIT",
+    "author": "@cj.lim/limchaejune",
+    "sideEffects": false,
+    "type": "module",
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs",
+            "default": "./dist/index.mjs"
+        }
+    },
     "files": [
         "dist"
     ],
@@ -47,12 +54,5 @@
     },
     "peerDependencies": {
         "eslint": ">=9"
-    },
-    "exports": {
-        ".": {
-            "import": "./dist/index.mjs",
-            "require": "./dist/index.cjs",
-            "default": "./dist/index.mjs"
-        }
     }
 }

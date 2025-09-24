@@ -4,5 +4,8 @@ export default [
     packageJson.configs.recommended,
     {
         files: ['**/package.json'],
+        rules: {
+            '@typescript-eslint/consistent-type-imports': 'off',
+        },
     },
 ];
