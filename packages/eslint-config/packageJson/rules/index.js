@@ -1,8 +1,8 @@
-import packageJson from "eslint-plugin-package-json";
+import packageJson from 'eslint-plugin-package-json';
 
 export default [
-  packageJson.configs.recommended,
-  {
-    files: ["**/package.json"],
-  },
+    packageJson.configs.recommended,
+    {
+        files: ['**/package.json'],
+    },
 ];

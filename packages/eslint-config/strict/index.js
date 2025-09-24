@@ -1,3 +1,4 @@
-import rules from "./rules/index.js";
+import sonarjs from 'eslint-plugin-sonarjs';
+import unicorn from 'eslint-plugin-unicorn';
 
-export default [...rules];
+export default [sonarjs.configs.recommended, unicorn.configs['flat/recommended']];

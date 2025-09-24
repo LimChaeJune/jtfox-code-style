@@ -23,48 +23,48 @@ Flat Config (ESLint 9+) 기준 예시입니다.
 
 ```js
 // eslint.config.js
-import jtfox from "@jtfox/eslint-config";
+import jtfox from '@jtfox/eslint-config';
 
 export default [
-  // 타입스크립트 기본 규칙
-  ...jtfox.configs.typescript,
-  // React 규칙 (import / hooks / a11y 포함)
-  ...jtfox.configs.react,
+    // 타입스크립트 기본 규칙
+    ...jtfox.configs.typescript,
+    // React 규칙 (import / hooks / a11y 포함)
+    ...jtfox.configs.react,
 ];
 ```
 
 ### 더 엄격하게 (strict + packageJson 포함)
 
 ```js
-import jtfox from "@jtfox/eslint-config";
+import jtfox from '@jtfox/eslint-config';
 
 export default [
-  ...jtfox.configs.typescript,
-  ...jtfox.configs.react,
-  ...jtfox.configs.strict, // unicorn / sonarjs 등 강화 규칙
-  ...jtfox.configs.packageJson, // package.json 전용 규칙
+    ...jtfox.configs.typescript,
+    ...jtfox.configs.react,
+    ...jtfox.configs.strict, // unicorn / sonarjs 등 강화 규칙
+    ...jtfox.configs.packageJson, // package.json 전용 규칙
 ];
 ```
 
 ### 부분 선택(React 없이 TS만)
 
 ```js
-import jtfox from "@jtfox/eslint-config";
+import jtfox from '@jtfox/eslint-config';
 export default [...jtfox.configs.typescript];
 ```
 
 ### 특정 규칙만 커스터마이징
 
 ```js
-import jtfox from "@jtfox/eslint-config";
+import jtfox from '@jtfox/eslint-config';
 
 export default [
-  ...jtfox.configs.react,
-  {
-    rules: {
-      "jsx-a11y/heading-has-content": "error",
+    ...jtfox.configs.react,
+    {
+        rules: {
+            'jsx-a11y/heading-has-content': 'error',
+        },
     },
-  },
 ];
 ```
 

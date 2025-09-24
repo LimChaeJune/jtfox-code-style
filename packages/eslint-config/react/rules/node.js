@@ -1,16 +1,16 @@
-import nodePlugin from "eslint-plugin-n";
+import nodePlugin from 'eslint-plugin-n';
 
 const essentialNodeRules = {
-  "n/no-callback-literal": "off",
+    'n/no-callback-literal': 'off',
 };
 
 const node = [
-  {
-    plugins: {
-      n: nodePlugin,
+    {
+        plugins: {
+            n: nodePlugin,
+        },
+        rules: essentialNodeRules,
     },
-    rules: essentialNodeRules,
-  },
 ];
 
 export default node;

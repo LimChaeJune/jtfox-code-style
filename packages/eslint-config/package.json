@@ -1,58 +1,58 @@
 {
-  "name": "@cj.lim/eslint-config",
-  "author": "@cj.lim/limchaejune",
-  "version": "0.1.0",
-  "description": "eslint for cj.lim projects",
-  "license": "MIT",
-  "type": "module",
-  "sideEffects": false,
-  "homepage": "https://github.com/LimChaeJune/jtfox-code-style",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/LimChaeJune/jtfox-code-style.git",
-    "directory": "packages/eslint-config"
-  },
-  "keywords": [
-    "eslint",
-    "config",
-    "cj.lim"
-  ],
-  "files": [
-    "dist"
-  ],
-  "scripts": {
-    "build": "rollup -c"
-  },
-  "dependencies": {
-    "@eslint/eslintrc": "^3.2.0",
-    "@eslint/js": "^9.15.0",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-import": ">=2.31.0",
-    "eslint-plugin-jsx-a11y": "^6.10.2",
-    "eslint-plugin-n": "^17.19.0",
-    "eslint-plugin-package-json": ">=0.33.2",
-    "eslint-plugin-react": "^7.37.2",
-    "eslint-plugin-react-hooks": "^5.2.0",
-    "eslint-plugin-sonarjs": "^3.0.1",
-    "eslint-plugin-unicorn": "^56.0.1",
-    "eslint-plugin-unused-imports": "^4.1.4",
-    "eslint-plugin-yml": "^1.16.0",
-    "globals": "^16.2.0",
-    "neostandard": "^0.11.9",
-    "typescript-eslint": "^8.34.0"
-  },
-  "devDependencies": {
-    "eslint": "^9.17.0",
-    "rollup": "^4.22.4"
-  },
-  "peerDependencies": {
-    "eslint": ">=9"
-  },
-  "exports": {
-    ".": {
-      "import": "./dist/index.mjs",
-      "require": "./dist/index.cjs",
-      "default": "./dist/index.mjs"
+    "name": "@cj.lim/eslint-config",
+    "author": "@cj.lim/limchaejune",
+    "version": "0.1.1",
+    "description": "eslint for cj.lim projects",
+    "license": "MIT",
+    "type": "module",
+    "sideEffects": false,
+    "homepage": "https://github.com/LimChaeJune/jtfox-code-style",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/LimChaeJune/jtfox-code-style.git",
+        "directory": "packages/eslint-config"
+    },
+    "keywords": [
+        "eslint",
+        "config",
+        "cj.lim"
+    ],
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "build": "rollup -c"
+    },
+    "dependencies": {
+        "@eslint/eslintrc": "^3.2.0",
+        "@eslint/js": "^9.15.0",
+        "eslint-config-prettier": "^10.1.8",
+        "eslint-plugin-import": ">=2.31.0",
+        "eslint-plugin-jsx-a11y": "^6.10.2",
+        "eslint-plugin-n": "^17.19.0",
+        "eslint-plugin-package-json": ">=0.33.2",
+        "eslint-plugin-react": "^7.37.2",
+        "eslint-plugin-react-hooks": "^5.2.0",
+        "eslint-plugin-sonarjs": "^3.0.1",
+        "eslint-plugin-unicorn": "^56.0.1",
+        "eslint-plugin-unused-imports": "^4.1.4",
+        "eslint-plugin-yml": "^1.16.0",
+        "globals": "^16.2.0",
+        "neostandard": "^0.11.9",
+        "typescript-eslint": "^8.34.0"
+    },
+    "devDependencies": {
+        "eslint": "^9.17.0",
+        "rollup": "^4.22.4"
+    },
+    "peerDependencies": {
+        "eslint": ">=9"
+    },
+    "exports": {
+        ".": {
+            "import": "./dist/index.mjs",
+            "require": "./dist/index.cjs",
+            "default": "./dist/index.mjs"
+        }
     }
-  }
 }

@@ -1,22 +1,22 @@
-import globals from "globals";
+import globals from 'globals';
 
-import configs from "./configs.js";
-import rules from "./rules/index.js";
+import configs from './configs.js';
+import rules from './rules/index.js';
 
 export default [
-  ...configs,
-  ...rules,
-  {
-    languageOptions: {
-      globals: {
-        ...globals.browser,
-        ...globals.jest,
-        ...globals.vitest,
-        ...globals.es2023,
-      },
+    ...configs,
+    ...rules,
+    {
+        languageOptions: {
+            globals: {
+                ...globals.browser,
+                ...globals.jest,
+                ...globals.vitest,
+                ...globals.es2023,
+            },
+        },
+        linterOptions: {
+            reportUnusedDisableDirectives: true,
+        },
     },
-    linterOptions: {
-      reportUnusedDisableDirectives: true,
-    },
-  },
 ];
