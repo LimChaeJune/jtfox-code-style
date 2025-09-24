@@ -1,20 +1,27 @@
 {
-    "name": "@jtfox/prettier-config",
-    "version": "0.1.0",
-    "description": "prettier config for jtfox",
-    "keywords": [
-        "jtfox",
-        "prettier",
-        "prettier-config"
-    ],   
-    "license": "MIT",
-    "author": "@jtfox/limchaejune",
-    "type": "commonjs",
-    "main": "index.json",
-    "devDependencies": {
-        "prettier": "^3.5.3"
-    },
-    "peerDependencies": {
-        "prettier": "^2.8.8 || ^3.0.0"
-    }
+  "name": "@cj.lim/prettier-config",
+  "author": "@cj.lim/limchaejune",
+  "version": "0.1.0",
+  "description": "prettier config for cj.lim",
+  "keywords": [
+    "cj.lim",
+    "prettier",
+    "prettier-config"
+  ],
+  "homepage": "https://github.com/LimChaeJune/jtfox-code-style",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LimChaeJune/jtfox-code-style.git",
+    "directory": "packages/prettier-config"
+  },
+  "license": "MIT",
+  "author": "@jtfox/limchaejune",
+  "type": "commonjs",
+  "main": "index.json",
+  "devDependencies": {
+    "prettier": "^3.5.3"
+  },
+  "peerDependencies": {
+    "prettier": "^2.8.8 || ^3.0.0"
+  }
 }
